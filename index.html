@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Nail Salon | 頂級美甲沙龍預約</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                sans: ['"Noto Sans TC"', 'sans-serif'],
+                serif: ['"Noto Serif TC"', 'serif'],
+              },
+              colors: {
+                brand: {
+                  50: '#fdf8f6',
+                  100: '#f2e8e5',
+                  200: '#eaddd7',
+                  300: '#e0cec7',
+                  400: '#d2bab0',
+                  500: '#a06e6e', // Muted Dusty Rose
+                  600: '#8a5a5a',
+                  800: '#5c3d3d',
+                  900: '#4a3030',
+                },
+                sand: {
+                  50: '#faf9f8',
+                  100: '#f5f2f0',
+                  200: '#e6e2de',
+                  800: '#5c5855',
+                }
+              },
+              boxShadow: {
+                'soft': '0 20px 40px -15px rgba(0, 0, 0, 0.05)',
+                'card': '0 0 20px rgba(0,0,0,0.02)',
+              }
+            }
+          }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #faf9f8; /* sand-50 */
+            color: #4a403a;
+        }
+        /* Custom scrollbar for cleaner look */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d4d4d4; 
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a06e6e; 
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
